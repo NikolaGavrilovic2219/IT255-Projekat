@@ -1,0 +1,14 @@
+<form role="form" [ngFormModel]="addDeo">
+<div class="alert alert-danger" style="display: none;">
+  
+</div>
+ <div class="form-group">
+    <label for="naziv">Naziv:</label>
+    <input type="text" class="form-control" ngControl='naziv'>
+  </div>
+  <div class="form-group">
+    <label for="proizvodjac">Proizvodjac:</label>
+    <input type="text" class="form-control"  ngControl='proizvodjac'>
+  </div>
+  <button (click)="onAddDeo()" class="btn btn-default">Add deo</button>
+</form>

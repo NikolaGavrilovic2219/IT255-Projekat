@@ -1,0 +1,25 @@
+<div class="col-lg-12">
+	<table  class="display" cellspacing="0" >
+	    <thead>
+            <tr>
+                <th>Vrsta: </th>
+                <th>Naziv: </th>
+                <th>Opis: </th>
+                <th>Brisanje: </th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="#servis of servisi">
+                <td>{{servis.VRSTA}}</td>
+                <td>{{servis.DEO_NAZIV}}</td>
+                <td>{{servis.OPIS}}</td>
+				 <td>
+                   <button class="btn btn-danger" title="remove" (click)="removeServis(servis.ID)">
+                      <span class="glyphicon glyphicon-remove"></span>
+                   </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

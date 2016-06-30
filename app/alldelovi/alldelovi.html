@@ -1,0 +1,17 @@
+<div class="col-lg-12">
+	<table  class="display" cellspacing="0" >
+	    <thead>
+            <tr>
+                <th>Naziv: </th>
+                <th>Proizvodjac: </th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="#deo of delovi">
+                <td>{{deo.NAZIV}}</td>
+                <td>{{deo.PROIZVODJAC}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
